@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo Oficial Leude Modas — Ofertas Exclusivas no WhatsApp</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #1a0f14;
+    --rose:      #e8a1b5;
+    --rose-deep: #d1698c;
+    --rose-dark: #a8456b;
+    --gold:      #e8c07d;
+    --white:     #ffffff;
+    --cream:     #fff8f5;
+    --text-soft: #6b4a52;
+    --border:    rgba(216,109,150,.2);
+    --radius:    20px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #2a1520 0%, #1a0f14 40%, #1a0f14 100%);
+    color: var(--white);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .serif { font-family: 'Playfair Display', serif; }
+
+  /* ── HERO ────────────────────────────────── */
+  .hero {
+    position: relative;
+    padding: 48px 24px 40px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(232,161,181,.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .logo {
+    width: 108px;
+    height: 108px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #f3c6d4, var(--rose-deep) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--white);
+    box-shadow: 0 0 0 4px rgba(232,161,181,.25), 0 8px 32px rgba(209,105,140,.4);
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.7rem, 6vw, 2.4rem);
+    letter-spacing: .02em;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 span { color: var(--rose); }
+
+  .hero p {
+    color: #e8c9d1;
+    max-width: 380px;
+    margin: 0 auto;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── CARD PRINCIPAL ──────────────────────── */
+  .card {
+    background: var(--cream);
+    color: #3a2228;
+    border-radius: var(--radius);
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 36px 26px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.4);
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+
+  .card-title .hand { font-size: 1.4rem; }
+
+  .urgency {
+    text-align: center;
+    font-weight: 600;
+    color: var(--rose-dark);
+    margin-bottom: 14px;
+    font-size: .98rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #f0dbe0;
+    border-radius: 99px;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  .progress-fill {
+    width: 78%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--rose-deep), var(--rose));
+    border-radius: 99px;
+  }
+
+  .btn-cta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, var(--rose-deep), var(--rose-dark));
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(209,105,140,.45);
+    transition: transform .18s, box-shadow .18s;
+    margin-bottom: 28px;
+  }
+
+  .btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(209,105,140,.55);
+  }
+
+  /* ── PROVA SOCIAL ────────────────────────── */
+  .social-proof {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fbeef1;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+
+  .check {
+    width: 24px;
+    height: 24px;
+    background: #4caf7d;
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    flex-shrink: 0;
+  }
+
+  .social-proof p { font-size: .92rem; color: #4a3238; }
+  .social-proof b { font-weight: 600; color: #2e1a20; }
+
+  .fine-print {
+    text-align: center;
+    font-size: .8rem;
+    color: #a67c85;
+    margin: 18px 0 24px;
+  }
+
+  /* ── DEPOIMENTO ──────────────────────────── */
+  .testimonial {
+    background: #f5e2e7;
+    border-radius: 14px;
+    padding: 20px;
+  }
+
+  .testimonial p {
+    font-style: italic;
+    font-size: .95rem;
+    color: #4a2b33;
+    margin-bottom: 10px;
+  }
+
+  .testimonial strong {
+    font-size: .88rem;
+    color: #7a3f52;
+  }
+
+  /* ── BENEFÍCIOS ──────────────────────────── */
+  .benefits {
+    max-width: 460px;
+    margin: 32px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 0 24px 48px;
+  }
+
+  .benefit {
+    background: var(--cream);
+    color: #3a2228;
+    border-radius: 16px;
+    padding: 20px 16px;
+  }
+
+  .benefit-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .benefit:nth-child(1) .benefit-icon { background: #fbe1e8; }
+  .benefit:nth-child(2) .benefit-icon { background: #fdeed0; }
+  .benefit:nth-child(3) .benefit-icon { background: #e6ddf5; }
+  .benefit:nth-child(4) .benefit-icon { background: #d9f0e6; }
+
+  .benefit-title {
+    font-weight: 600;
+    font-size: .95rem;
+    margin-bottom: 6px;
+  }
+
+  .benefit-desc {
+    font-size: .82rem;
+    color: #8a6870;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 380px) {
+    .benefits { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="logo serif">LM</div>
+  <h1 class="serif">GRUPO OFICIAL <span>LEUDE MODAS</span></h1>
+  <p>Cupons exclusivos e as melhores promoções de moda feminina — direto no seu WhatsApp.</p>
+</section>
+
+<div class="card">
+  <div class="card-title">
+    <span class="hand">👇</span> Clique para entrar no grupo VIP da <strong>LEUDE MODAS</strong>
+  </div>
+
+  <div class="urgency">⚡ Restam 15 vagas hoje</div>
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+
+  <a href="https://chat.whatsapp.com/SEU_LINK_AQUI" target="_blank" class="btn-cta">
+    👉 Entrar no Grupo Agora!
+  </a>
+
+  <div class="social-proof">
+    <div class="check">✓</div>
+    <p><b>Camila Souza</b> entrou no grupo agora</p>
+  </div>
+  <div class="social-proof">
+    <div class="check">✓</div>
+    <p><b>Fernanda Lima</b> entrou no grupo agora</p>
+  </div>
+  <div class="social-proof">
+    <div class="check">✓</div>
+    <p><b>Juliana Torres</b> entrou no grupo agora</p>
+  </div>
+
+  <div class="fine-print">Vagas limitadas • Apenas para promoções de moda selecionadas</div>
+
+  <div class="testimonial">
+    <p>"As peças daqui são lindas e os cupons são reais, já economizei bastante nas minhas compras. 👗💕"</p>
+    <strong>— Camila S.</strong>
+  </div>
+</div>
+
+<div class="benefits">
+  <div class="benefit">
+    <div class="benefit-icon">💸</div>
+    <div class="benefit-title">Cupons de até 60% OFF</div>
+    <div class="benefit-desc">Descontos reais e atualizados diariamente.</div>
+  </div>
+  <div class="benefit">
+    <div class="benefit-icon">✨</div>
+    <div class="benefit-title">Lançamentos em primeira mão</div>
+    <div class="benefit-desc">As peças mais desejadas da coleção, antes de todo mundo.</div>
+  </div>
+  <div class="benefit">
+    <div class="benefit-icon">👗</div>
+    <div class="benefit-title">Looks e combinações</div>
+    <div class="benefit-desc">Inspirações de looks selecionadas para você.</div>
+  </div>
+  <div class="benefit">
+    <div class="benefit-icon">✅</div>
+    <div class="benefit-title">Ofertas verificadas</div>
+    <div class="benefit-desc">Curadoria para você comprar com segurança.</div>
+  </div>
+</div>
+
+</body>
+</html>
